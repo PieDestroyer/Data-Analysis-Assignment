@@ -33,7 +33,7 @@ public class Analyzer
 		}
 	public static void numberOfOccurrencesg()
 		{
-		int sum = 0;
+		double sum = 0;
 		for (Record r:Data.data)
 			{
 			if (r.getLetterCode().startsWith("g"))
@@ -42,7 +42,7 @@ public class Analyzer
 				}
 			}
 		System.out.println("There are "+ sum +" records beginning with the letter \"g\".");
-		System.out.println("That is "+sum/Data.data.size()+ "% of the records.");
+		System.out.println("That is "+sum*100/Data.data.size()+ "% of the records.");
 		}
 	
 	}
